@@ -1,6 +1,7 @@
 module PWD
 
   require 'pwd/version'
+  require 'pwd/core_ext'
 
   extend self
 

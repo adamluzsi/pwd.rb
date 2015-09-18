@@ -1,8 +1,6 @@
 # Pwd
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pwd`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Look up for project root folder based on conventions
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+
+require 'pwd'
+
+PWD.pwd #> returns project root folder
+
+Dir.root_folder #> the same but more readable in that form
+
+```
 
 ## Development
 
