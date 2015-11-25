@@ -17,6 +17,10 @@ module PWD
 
   end
 
+  def join(*path_parts)
+    File.join(pwd,*path_parts)
+  end
+
   def rails_present?
     !!(defined?(Rails) && !Rails.root.nil?)
   end

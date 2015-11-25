@@ -58,4 +58,21 @@ describe PWD do
 
   end
 
+  describe '#join' do
+    subject { raw_subject.join(*path_parts) }
+
+    context 'when array of path part is given' do
+      let(:path_parts) { %w(hello world) }
+
+      it { is_expected.to eq File.join(raw_subject.pwd,'hello','world') }
+    end
+
+    context 'when string path given' do
+      let(:path_parts){'/hello/world'}
+
+      it { is_expected.to eq File.join(raw_subject.pwd,'hello','world') }
+    end
+
+  end
+
 end
