@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.version       = PWD::VERSION
   spec.authors       = ["Adam Luzsi"]
   spec.email         = ["adamluzsi@gmail.com"]
+  spec.license       = 'Apache License 2.0'
 
   spec.summary       = %q{Look up for project root folder based on conventions}
   spec.description   = %q{Look up for project root folder based on conventions}
